@@ -1,0 +1,52 @@
+#carouselMovie{
+    margin-top: 58px;
+    .carousel-item{
+        height: 680px;
+        position: relative;
+        img{
+            height: 100%;
+        }
+        .overlayMovie{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top,#000,transparent 20%);
+        }
+    }
+    .carousel-indicators{
+        margin: 0;
+        bottom: 100px;
+        .indicatorMovie{
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            border: none;
+            transition: all .3s;
+            margin-left: 7px;
+            opacity: .7;
+        }
+        .indicatorMovie.active{
+            background-color: red;
+        }
+    }
+    .arrowWrapLeft{
+        top: 50%;
+        bottom: unset;
+        width: unset;
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+    .arrowWrapRight{
+        top: 50%;
+        bottom: unset;
+        width: unset;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+    .arrowMovie{
+         height: 40px;
+         width: 40px;
+    }
+}
