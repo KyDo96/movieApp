@@ -1,0 +1,3 @@
+export const SEARCHING_FILM_REQUEST='searchingFilmReducer/SEARCHING_FILM_REQUEST';
+export const SEARCHING_FILM_SUCCESS='searchingFilmReducer/SEARCHING_FILM_SUCCESS';
+export const SEARCHING_FILM_FAILED='searchingFilmReducer/SEARCHING_FILM_FAILED';

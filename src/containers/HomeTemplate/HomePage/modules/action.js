@@ -7,11 +7,11 @@ import Axios from 'axios'
 const actApi=(dispatch)=>{
     return ()=>{dispatch(actHomePageRequest());
         Axios({
-            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP10',
+            url:'https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP05',
             method:'GET'
         })
-        .then((r)=>{console.log(r.data)})
-        .catch((e)=>{console.log(e)})
+        .then((r)=>{dispatch(actHomePageSuccess(r.data))})
+        .catch((e)=>{dispatch(actHomePageFailed(e))})
     }
 }
 

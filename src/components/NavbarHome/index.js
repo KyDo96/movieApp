@@ -4,7 +4,7 @@ import './navbarHome.scss'
 export default function index() {
     return (
         <div className='navbarHome row m-0 justify-content-md-between align-items-center py-1'>
-            <Link to='/'> <img src='./assets/img/web-logo.png'/></Link>
+            <Link to='/'> <img src='./assets/img/web-logo.png' alt=''/></Link>
                 <ul className='row'>
                     <li>
                         <NavLink to='/#lich_chieu' >Lịch chiếu

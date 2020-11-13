@@ -1,8 +1,8 @@
-import { data } from 'jquery'
+
 import {
-    HOME_PAGE_REQUEST,
-    HOME_PAGE_SUCCESS,
-    HOME_PAGE_FAILED
+    LIST_FILM_REQUEST,
+    LIST_FILM_SUCCESS,
+    LIST_FILM_FAILED
 } from './constants'
 
 const intinialState ={
@@ -11,19 +11,19 @@ const intinialState ={
     err:null
 }
 
-const homePageReducer=(state=intinialState,action)=>{
+const listFilmReducer=(state=intinialState,action)=>{
     switch(action.type){
-        case HOME_PAGE_REQUEST:
+        case LIST_FILM_REQUEST:
             state.loading=true;
             state.data=null;
             state.err=null;
             return {...state}
-        case HOME_PAGE_SUCCESS:
+        case LIST_FILM_SUCCESS:
             state.loading=false;
             state.data=action.payload;
             state.err=null;
             return {...state}
-        case HOME_PAGE_FAILED:
+        case LIST_FILM_FAILED:
             state.loading=false;
             state.data=null;
             state.err=action.payload;
@@ -33,4 +33,4 @@ const homePageReducer=(state=intinialState,action)=>{
     }
 }
 
-export default homePageReducer
+export default listFilmReducer

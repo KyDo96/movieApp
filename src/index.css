@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -13,4 +14,15 @@ code {
 }
 html{
   scroll-behavior: smooth;
+}
+.container{
+  max-width: 940px!important;
+}
+@media screen and (max-width:940px){
+    .item_in_list img{
+      height:unset!important;
+    }
+    /* .item_in_list .overlay .backGround{
+      height: 80%!important;
+    } */
 }
