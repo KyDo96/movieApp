@@ -1,14 +1,14 @@
 import React,{useEffect} from 'react'
 import Carousel from '../../../components/HomePage/Carousel'
-import actApi from './modules/action'
+import {actApiListPhim,actApiRap} from './modules/action'
 import {connect} from 'react-redux'
-import Loader from './../../../components/Loader'
+import Loader from '../../../Layout/Loader'
 import ListPhim from '../../../components/HomePage/ListPhim'
+import ListRap from '../../../components/HomePage/ListRap'
 function HomePage(props) {
-
-    console.log(props)
     useEffect(() => {
-        props.handleCallApi();
+        props.callApiListPhim();
+        props.callApiRap()
     }, [])
     return (
         <div>
@@ -20,6 +20,7 @@ function HomePage(props) {
             <div className='container'>
             <img className='img-fluid' src='./assets/img/back-ground.png' alt=''/>
             </div>
+            <ListRap/>
             <div style={{display:"block",height:500}}></div>
             </div>
             )
@@ -29,14 +30,15 @@ function HomePage(props) {
 }
 const mapStateToProps=(state)=>{
     return{
-        loading:state.homePageReducer.loading,
-        listPhimDangChieu:state.homePageReducer.data
     }
 }
 const mapDispatchToProps=(dispatch)=>{
     return{
-        handleCallApi:()=>{
-            dispatch(actApi(dispatch))
+        callApiListPhim:()=>{
+            dispatch(actApiListPhim())
+        },
+        callApiRap:()=>{
+            dispatch(actApiRap())
         }
     }
 }

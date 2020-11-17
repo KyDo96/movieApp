@@ -5,7 +5,7 @@ import listFilmReducer from './../components/HomePage/ListPhim/modules/reducer'
 const rootReducer=combineReducers({
     homePageReducer,
     searchingFilmReducer,
-    listFilmReducer
+    listFilmReducer,
 })
 
 export default rootReducer;

@@ -90,7 +90,7 @@ function SearchingFilm(props) {
 }
 const mapStateToProps=(state)=>{
     return{
-        listPhimDangChieu:state.homePageReducer.data,
+        listPhimDangChieu:state.homePageReducer.dataListPhim,
         loadingRap:state.searchingFilmReducer.loading,
         listRap:state.searchingFilmReducer.data
     }

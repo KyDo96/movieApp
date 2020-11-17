@@ -9,7 +9,7 @@ export default function ItemInList(props) {
     <div className="item_in_list col-3">
       <div>
         <div style={{ position: "relative" }}>
-          <img className="img-fluid" src={props.phim.hinhAnh}></img>
+          <img className="img-fluid" src={props.phim.hinhAnh} alt=''></img>
           <div className="play_video">
             <a onClick={()=> setOpen(true)}>
               <img src='./assets/img/play-video.png'/>

@@ -16,7 +16,7 @@ function CarouselListPhim(props) {
                     <div className='row m-0'>
                     {arrayListPhim.map((item,index)=>{
                         if(index>=i*SO_ITEM_1_SLIDE&&index<i*SO_ITEM_1_SLIDE+8){
-                        return <ItemInList phim={item}/>
+                        return <ItemInList key={index} phim={item}/>
                         }
                     })}
                     </div>
@@ -29,7 +29,7 @@ function CarouselListPhim(props) {
                     <div className='row m-0'>
                     {arrayListPhim.map((item,index)=>{
                         if(index>=i*SO_ITEM_1_SLIDE&&index<i*SO_ITEM_1_SLIDE+8){
-                        return <ItemInList phim={item}/>
+                        return <ItemInList key={index} phim={item}/>
                         }
                     })}
                     </div>

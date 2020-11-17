@@ -1,7 +1,8 @@
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import PageNotFound from './containers/PageNotFound'
 import {routesHome} from './routes'
-import NavbarHome from './components/NavbarHome'
+import NavbarHome from './Layout/NavbarHome'
+import ListRap from './components/HomePage/ListRap';
 function App() {
   const showHomeTemplate=()=>{
     return routesHome.map((item,index)=>{

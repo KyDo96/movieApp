@@ -10,15 +10,9 @@ height: 120px;
 -webkit-animation: spin 2s linear infinite; /* Safari */
 animation: spin 2s linear infinite;
 
-position: fixed;
-top:45%;
-left:47%;
 `
 export default function Loader() {
     return (
-            // <div class="loader"></div>
-            <div className='backGroundLoader'>
-            <Loading primar></Loading>
-            </div>
+            <Loading ></Loading>
     )
 }

@@ -38,7 +38,7 @@ function ListPhim(props) {
 }
 const mapStateToProps=(state)=>{
     return{
-        listPhimDangChieu:state.homePageReducer.data,
+        listPhimDangChieu:state.homePageReducer.dataListPhim,
         listPhimSapChieu:state.listFilmReducer.data,
         loading:state.listFilmReducer.loading
     }

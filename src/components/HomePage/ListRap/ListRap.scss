@@ -1,0 +1,48 @@
+.list_rap{
+    border: 1px solid #ebebec;
+    border-radius: 4px;
+    .tab1 .nav-link{
+        padding: 20px 0;
+        margin: 0 20px;
+        background-color: unset!important;
+        &:hover{
+            img{
+                opacity: 1;
+            }
+        }
+        img{
+            width: 50px;
+            opacity: .5;
+        }
+        border-bottom: 1px solid rgba(238,238,238,.88);
+    }
+    .tab1 .nav-link.active{
+        img{
+            opacity: 1;
+        }
+    }
+    .tab2{
+            border-left:1px solid #ebebec;
+            border-right:1px solid #ebebec;
+        .nav-link{
+            padding:20px 0px;
+            margin: 0 15px;
+            opacity: .5;
+            background-color: unset!important;
+            border-bottom: 1px solid rgba(238,238,238,.88);
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .nav-link.active{
+            opacity: 1;
+        }
+        // .content2{
+        //     padding:20px 0px;
+        //     margin: 0 15px;
+        //     border-bottom: 1px solid rgba(238,238,238,.88);
+        // }
+    }
+    
+
+}
