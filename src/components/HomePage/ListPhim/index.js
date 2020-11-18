@@ -25,11 +25,27 @@ function ListPhim(props) {
         </ul>
         <div className="tab-content">
             <div id="dangChieu" className="tab-pane fade in active show">
-            <CarouselListPhim idListPhim='phimDangChieu' hrefForArrow='#phimDangChieu' listPhim={props.listPhimDangChieu}/>
+            {props.loadingListPhim?<h4 className='text-center'>Loading...</h4>:
+                props.listPhimDangChieu?
+            (
+            <CarouselListPhim 
+            idListPhim='phimDangChieu' 
+            hrefForArrow='#phimDangChieu' 
+            listPhim={props.listPhimDangChieu}/>
+            )
+            :<h4 className='text-center'>Xảy ra lỗi,vui lòng thử lại</h4>
+                }
             </div>
             <div id="sapChieu" className="tab-pane fade">
-                {props.loading?<h4>Loading...</h4>:
-            <CarouselListPhim idListPhim='phimSapChieu' hrefForArrow='#phimSapChieu' listPhim={props.listPhimSapChieu}/>
+                {props.loading?<h4 className='text-center'>Loading...</h4>:
+                props.listPhimSapChieu?
+            (
+            <CarouselListPhim 
+            idListPhim='phimSapChieu' 
+            hrefForArrow='#phimSapChieu' 
+            listPhim={props.listPhimSapChieu}/>
+            )
+            :<h4 className='text-center'>Xảy ra lỗi,vui lòng thử lại</h4>
                 }
             </div>
         </div>
@@ -38,6 +54,7 @@ function ListPhim(props) {
 }
 const mapStateToProps=(state)=>{
     return{
+        loadingListPhim:state.homePageReducer.loadingListPhim,
         listPhimDangChieu:state.homePageReducer.dataListPhim,
         listPhimSapChieu:state.listFilmReducer.data,
         loading:state.listFilmReducer.loading

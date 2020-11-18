@@ -1,7 +1,13 @@
+.bg_list_rap{
+    background-image: url(./../../../img/back-ground.png);
+    height: 120px;
+    background-size: cover;
+}
 .list_rap{
     border: 1px solid #ebebec;
     border-radius: 4px;
     .tab1 .nav-link{
+        border: 0;
         padding: 20px 0;
         margin: 0 20px;
         background-color: unset!important;
@@ -9,6 +15,9 @@
             img{
                 opacity: 1;
             }
+        }
+        &:focus{
+            outline: none;
         }
         img{
             width: 50px;
@@ -25,6 +34,9 @@
             border-left:1px solid #ebebec;
             border-right:1px solid #ebebec;
         .nav-link{
+            text-align: left;
+            border: 0;
+            color: black;
             padding:20px 0px;
             margin: 0 15px;
             opacity: .5;
@@ -33,15 +45,13 @@
             &:hover{
                 opacity: 1;
             }
+            &:focus{
+                outline: none;
+            }
         }
         .nav-link.active{
             opacity: 1;
         }
-        // .content2{
-        //     padding:20px 0px;
-        //     margin: 0 15px;
-        //     border-bottom: 1px solid rgba(238,238,238,.88);
-        // }
     }
     
 

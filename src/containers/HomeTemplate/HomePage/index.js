@@ -17,9 +17,6 @@ function HomePage(props) {
             <div>
             <Carousel/>
             <ListPhim/>
-            <div className='container'>
-            <img className='img-fluid' src='./assets/img/back-ground.png' alt=''/>
-            </div>
             <ListRap/>
             <div style={{display:"block",height:500}}></div>
             </div>
