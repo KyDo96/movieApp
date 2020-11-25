@@ -7,13 +7,11 @@ import {
     HOME_PAGE_HE_THONG_RAP_FAILED,
     HOME_PAGE_CUM_RAP_SUCCESS,
     HOME_PAGE_CUM_RAP_FAILED,
-    HOME_PAGE_CUM_RAP_REQUEST
 } from './constants'
 
 const intinialState ={
     loadingListPhim:false,
     loadingRap:false,
-    loadingCumRap:false,
     dataListPhim:null,
     dataListHeThongRap:null,
     dataListCumRap:null,
@@ -56,22 +54,15 @@ const homePageReducer=(state=intinialState,action)=>{
             state.errListHeThongRap=action.payload;
             return {...state}
         case HOME_PAGE_CUM_RAP_SUCCESS:
-            state.loadingCumRap=false;
             state.loadingRap=false
             state.dataListCumRap=action.payload;
             state.errListCumRap=null;
             return {...state}
         case HOME_PAGE_CUM_RAP_FAILED:
-            state.loadingCumRap=false;
             state.loadingRap=false
             state.dataListCumRap=null;
             state.errListCumRap=action.payload;
             return {...state}
-        case HOME_PAGE_CUM_RAP_REQUEST:
-            state.loadingCumRap=true;
-            state.dataListCumRap=null;
-            state.errListCumRap=null;
-            return{...state}
         default:
             return {...state}
     }

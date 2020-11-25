@@ -14,7 +14,7 @@ const getListHeThongRapApi=()=>{
 }
 const getListCumRapApi=(maHeThongRap)=>{
     return Axios({
-        url:`https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinCumRapTheoHeThong?maHeThongRap=${maHeThongRap}`,
+        url:`https://movie0706.cybersoft.edu.vn/api/QuanLyRap/LayThongTinLichChieuHeThongRap?maHeThongRap=${maHeThongRap}&maNhom=GP05`,
         method:'GET'
     })
 }

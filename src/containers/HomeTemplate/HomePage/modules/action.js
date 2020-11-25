@@ -7,7 +7,6 @@ import {
     HOME_PAGE_HE_THONG_RAP_FAILED,
     HOME_PAGE_CUM_RAP_SUCCESS,
     HOME_PAGE_CUM_RAP_FAILED,
-    HOME_PAGE_CUM_RAP_REQUEST
 } from './constants'
 import {getListPhimApi,getListHeThongRapApi,getListCumRapApi} from './../../../../Services/clientApi'
 import createAction from './../../../../redux/Actions'
@@ -32,7 +31,6 @@ const actApiRap=()=>{
 }
 const actApiCumRap=(maHeThongRap)=>{
     return dispatch=>{
-        dispatch(createAction(HOME_PAGE_CUM_RAP_REQUEST,null))
         getListCumRapApi(maHeThongRap)
         .then(r=>dispatch(createAction(HOME_PAGE_CUM_RAP_SUCCESS,r.data)))
         .catch(e=>dispatch(createAction(HOME_PAGE_CUM_RAP_FAILED,e)))
