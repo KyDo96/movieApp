@@ -9,13 +9,20 @@ class ListRap extends Component {
             indexCumRap:0
         }
     }
+    changeLichChieu=(index)=>{
+        this.setState({
+            indexCumRap:index
+        })
+    }
     renderHeThongRap=(array)=>{
         if(array){
             return array.map((item,index)=>{
                 let myClass='nav-link';
                 if(index===0){myClass='active nav-link'}
                 return <button className={myClass}
-                onClick={()=>{this.props.getListCumRap(item.maHeThongRap)}}
+                onClick={()=>{
+                    this.setState({indexCumRap:0});
+                    this.props.getListCumRap(item.maHeThongRap)}}
                 data-toggle="pill"
                 key={index}
                 ><img src={item.logo} alt=''/></button>
@@ -30,6 +37,7 @@ class ListRap extends Component {
                 return <button className={myClass} 
                  data-toggle="pill"
                  key={index}
+                 onClick={()=>{this.changeLichChieu(index)}}
                 ><p className='text-success font-weight-bolder m-0'>{item.tenCumRap}</p>
                 <span style={{fontSize:14}}>{item.diaChi}</span></button>
                 
