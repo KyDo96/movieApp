@@ -64,7 +64,7 @@ function SearchingFilm(props) {
     return (
         <div className='searchingMovie container'>
             <div style={{flexWrap:"nowrap"}} className='row m-0'>
-            <select onChange={handleOnChangeTenPhim} style={{width:'30%'}} className="selectBox form-control" >
+            <select className='listFilm' onChange={handleOnChangeTenPhim} style={{width:'30%'}} className="selectBox form-control" >
                     <option value='' selected hidden> Phim </option>
                     {renderListPhim()}
             </select>

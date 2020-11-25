@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import './ListRap.scss'
 import {connect} from 'react-redux'
 import actApiListRap from './modules/action'
+import Loader from './../../../Layout/Loader'
 class ListRap extends Component {
     constructor(props){
         super(props)
@@ -83,14 +84,22 @@ class ListRap extends Component {
             <div className='bg_list_rap container p-0'>
             </div>
             <div className='list_rap container p-0'>
-                {this.props.loading?<h4 className='text-center'>Loading...</h4>:
+                {this.props.loading?(
+                <div>
+                    <Loader/>
+            <br/>
+            <h4 className='text-center'>Loading...</h4></div>):
                 this.props.listHeThongRap&&this.props.listCumRap?
                 (<div className="row m-0">
                         <div className="tab1 nav flex-column">
                             {this.renderHeThongRap(this.props.listHeThongRap)}
                         </div>
                         <div className="tab2 col-4 nav flex-column">
-                        {this.props.loadingCumRap?<h4 className='text-center'>Loading...</h4>:
+                        {this.props.loadingCumRap?(
+                <div style={{marginTop:'200px'}}>
+                    <Loader/>
+            <br/>
+            <h4 className='text-center'>Loading...</h4></div>):
                         this.props.listCumRapClick?
                         this.renderCumRap(this.props.listCumRapClick[0].lstCumRap):
                         this.props.errCumRap?
@@ -99,7 +108,11 @@ class ListRap extends Component {
                         }
                         </div>
                         <div className="tab3 nav flex-column">
-                        {this.props.loadingCumRap?<h4 className='text-center'>Loading...</h4>:
+                        {this.props.loadingCumRap?(
+                <div style={{marginTop:'200px'}}>
+                    <Loader/>
+            <br/>
+            <h4 className='text-center'>Loading...</h4></div>):
                         this.props.listCumRapClick?
                         this.renderLichChieu(this.props.listCumRapClick[0].lstCumRap[this.state.indexCumRap].danhSachPhim):
                         this.props.errCumRap?

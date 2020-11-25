@@ -3,6 +3,7 @@ import CarouselListPhim from "./CarouselListPhim";
 import './ListPhim.scss'
 import {connect} from 'react-redux'
 import actApi from './modules/action'
+import Loader from './../../../Layout/Loader'
 function ListPhim(props) {
   const renderListSapChieu=()=>{
       if(props.listPhimSapChieu===null){
@@ -25,7 +26,11 @@ function ListPhim(props) {
         </ul>
         <div className="tab-content">
             <div id="dangChieu" className="tab-pane fade in active show">
-            {props.loadingListPhim?<h4 className='text-center'>Loading...</h4>:
+            {props.loadingListPhim?(
+                <div>
+                    <Loader/>
+            <br/>
+            <h4 className='text-center'>Loading...</h4></div>):
                 props.listPhimDangChieu?
             (
             <CarouselListPhim 
@@ -37,7 +42,11 @@ function ListPhim(props) {
                 }
             </div>
             <div id="sapChieu" className="tab-pane fade">
-                {props.loading?<h4 className='text-center'>Loading...</h4>:
+                {props.loading?(
+                <div>
+                    <Loader/>
+            <br/>
+            <h4 className='text-center'>Loading...</h4></div>):
                 props.listPhimSapChieu?
             (
             <CarouselListPhim 
