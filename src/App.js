@@ -2,6 +2,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import PageNotFound from './containers/PageNotFound'
 import {routesHome} from './routes'
 import NavbarHome from './Layout/NavbarHome'
+import FooterHome from './Layout/FooterHome';
 function App() {
   const showHomeTemplate=()=>{
     return routesHome.map((item,index)=>{
@@ -14,6 +15,7 @@ function App() {
                 <>
                 <NavbarHome/>
                 <Component route={propsOfRoute}/>
+                <FooterHome/>
                 </>
               )}
       />

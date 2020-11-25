@@ -18,7 +18,6 @@ function HomePage(props) {
             <Carousel/>
             <ListPhim/>
             <ListRap/>
-            <div style={{display:"block",height:500}}></div>
             </div>
             )
             }
