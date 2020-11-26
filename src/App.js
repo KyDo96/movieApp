@@ -12,11 +12,11 @@ function App() {
               key={index}
               exact={item.exact}
               render={(propsOfRoute)=>(
-                <>
+                <div>
                 <NavbarHome/>
                 <Component route={propsOfRoute}/>
                 <FooterHome/>
-                </>
+                </div>
               )}
       />
     })

@@ -11,7 +11,7 @@ function ListPhim(props) {
       }
   }
   return (
-        <div className="container p-0 list_phim">
+        <div id='lich_chieu' className="container p-0 list_phim">
         <ul className="nav nav-tabs">
             <li className="active">
             <a data-toggle="tab" className='active' href="#dangChieu">

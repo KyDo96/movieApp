@@ -1,7 +1,7 @@
 import React from 'react'
 import SearchingFilm from '../SearchingFilm'
 import './carousel.scss'
-export default function Carousel() {
+export default function Carousel(props) {
     return (
         <div>
         <div id="carouselMovie" className="carousel slide" data-ride="carousel">
@@ -43,7 +43,7 @@ export default function Carousel() {
                     <span className="sr-only">Next</span>
                 </a>
                 
-         <SearchingFilm/>
+         <SearchingFilm pushMethod={props.pushMethod}/>
          </div>
          </div>
     )

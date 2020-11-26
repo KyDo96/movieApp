@@ -29,20 +29,20 @@ export default function FooterHome() {
                 <a target="_blank" href="https://www.cgv.vn/" title="CGV">
                   <img
                     className="iconConnect"
-                    src="./assets/img/icons/cgv.png"
+                    src="/assets/img/icons/cgv.png"
                     style={{ backgroundColor: "#fff" }}
                   />
                 </a>
                 <a target="_blank" href="http://bhdstar.vn" title="BHD">
                   <img
                     className="iconConnect"
-                    src="./assets/img/icons/bhd.png"
+                    src="/assets/img/icons/bhd.png"
                   />
                 </a>
                 <a target="_blank" href="http://galaxycine.vn" title="Galaxy">
                   <img
                     className="iconConnect"
-                    src="./assets/img/icons/galaxycine.png"
+                    src="/assets/img/icons/galaxycine.png"
                   />
                 </a>
                 <a
@@ -52,7 +52,7 @@ export default function FooterHome() {
                 >
                   <img
                     className="iconConnect"
-                    src="./assets/img/icons/cinestar.png"
+                    src="/assets/img/icons/cinestar.png"
                   />
                 </a>
                 <a
@@ -69,56 +69,56 @@ export default function FooterHome() {
               </div>
               <div className="row col-sm-12 col-xs-12 linePartner">
                 <a target="_blank" href="https://www.megagscinemas.vn" title="MegaGS">
-                    <img className="iconConnect" src="./assets/img/icons/megags.png" />
+                    <img className="iconConnect" src="/assets/img/icons/megags.png" />
                 </a>
                 <a target="_blank" href="https://www.betacineplex.vn/" title="Beta">
-                    <img className="iconConnect" src="./assets/img/icons/bt.jpg" />
+                    <img className="iconConnect" src="/assets/img/icons/bt.jpg" />
                 </a>
                 <a target="_blank" href="http://ddcinema.vn" title="DDC">
-                    <img className="iconConnect" src="./assets/img/icons/dongdacinema.png" />
+                    <img className="iconConnect" src="/assets/img/icons/dongdacinema.png" />
                 </a>
                 <a target="_blank" href="https://touchcinema.com/" title="Touch Cinema">
-                    <img className="iconConnect" src="./assets/img/icons/TOUCH.png" />
+                    <img className="iconConnect" src="/assets/img/icons/TOUCH.png" />
                 </a>
                 <a target="_blank" href="https://cinemaxvn.com/" title="Cinemax">
-                    <img className="iconConnect" src="./assets/img/icons/cnx.jpg" />
+                    <img className="iconConnect" src="/assets/img/icons/cnx.jpg" />
                 </a>
                 </div>
                <div className="row col-sm-12 col-xs-12 linePartner">
   <a target="_blank" href="http://starlight.vn/" title="Starlight">
-    <img className="iconConnect" src="./assets/img/icons/STARLIGHT.png" />
+    <img className="iconConnect" src="/assets/img/icons/STARLIGHT.png" />
   </a>
   <a target="_blank" href="https://www.dcine.vn/" title="Dcine">
-    <img className="iconConnect" src="./assets/img/icons/dcine.png" />
+    <img className="iconConnect" src="/assets/img/icons/dcine.png" />
   </a>
   {/* <a target="_blank" href="https://momo.vn" title="MoMo">
-        <img class="iconConnect" src="./assets/img/icons/momo.png">
+        <img class="iconConnect" src="/assets/img/icons/momo.png">
     </a> */}
   <a target="_blank" href="https://zalopay.vn/" title="ZaloPay">
-    <img className="iconConnect" src="./assets/img/icons/zalopay_icon.png" />
+    <img className="iconConnect" src="/assets/img/icons/zalopay_icon.png" />
   </a>
   <a target="_blank" href="https://www.payoo.vn/" title="Payoo">
-    <img className="iconConnect" src="./assets/img/icons/payoo.jpg" />
+    <img className="iconConnect" src="/assets/img/icons/payoo.jpg" />
   </a>
   <a target="_blank" href="https://www.vietcombank.com.vn/" title="Vietcombank">
-    <img className="iconConnect" src="./assets/img/icons/VCB.png" />
+    <img className="iconConnect" src="/assets/img/icons/VCB.png" />
   </a>
 </div>
                     <div className="row col-sm-12 col-xs-12 linePartner">
                     <a target="_blank" href="http://www.agribank.com.vn/" title="Agribank">
-                        <img className="iconConnect" src="./assets/img/icons/AGRIBANK.png" />
+                        <img className="iconConnect" src="/assets/img/icons/AGRIBANK.png" />
                     </a>
                     <a target="_blank" href="https://www.vietinbank.vn/" title="Vietinbank">
-                        <img className="iconConnect" src="./assets/img/icons/VIETTINBANK.png" />
+                        <img className="iconConnect" src="/assets/img/icons/VIETTINBANK.png" />
                     </a>
                     <a target="_blank" href="https://www.indovinabank.com.vn/" title="IVB">
-                        <img className="iconConnect" src="./assets/img/icons/IVB.png" />
+                        <img className="iconConnect" src="/assets/img/icons/IVB.png" />
                     </a>
                     <a target="_blank" href="http://123go.vn" title="123Go">
-                        <img className="iconConnect" src="./assets/img/icons/123go.png" />
+                        <img className="iconConnect" src="/assets/img/icons/123go.png" />
                     </a>
                     <a target="_blank" href="http://laban.vn" title="La Bàn">
-                        <img className="iconConnect" src="./assets/img/icons/laban.png" />
+                        <img className="iconConnect" src="/assets/img/icons/laban.png" />
                     </a>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ export default function FooterHome() {
                     <p className='text-center'>SOCIAL</p>
                     <div className='row justify-content-center'>
                    <a style={{marginRight:'20px'}} href='#'><i class="fab fa-facebook"></i></a> 
-                   <a href='#'><img className='zalo-icon' src='./assets/img/zalo-logo.png' alt=''/></a>
+                   <a href='#'><img className='zalo-icon' src='/assets/img/zalo-logo.png' alt=''/></a>
                    </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ export default function FooterHome() {
       </div>
         <div style={{borderTop:"1px solid #4a4a4a"}} className='row p-0 pt-4'>
           <div>
-          <img style={{width:'80px',borderRadius:'8px'}} src='./assets/img/zion-logo.jpg' alt=''/>
+          <img style={{width:'80px',borderRadius:'8px'}} src='/assets/img/zion-logo.jpg' alt=''/>
           </div>
           <div className='flex-grow-1 px-3'>
             <h7>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h7>
@@ -161,7 +161,7 @@ export default function FooterHome() {
             </p>
           </div>
           <div>
-          <img style={{width:'130px'}} src='./assets/img/bo-cong-thuong.png' alt=''></img>
+          <img style={{width:'130px'}} src='/assets/img/bo-cong-thuong.png' alt=''></img>
           </div>
         </div>
       </div>

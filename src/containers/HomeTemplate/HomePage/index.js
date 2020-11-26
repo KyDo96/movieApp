@@ -15,9 +15,9 @@ function HomePage(props) {
             {props.loading?<Loader/>:
             (
             <div>
-            <Carousel/>
+            <Carousel pushMethod={props.route.history.push}/>
             <ListPhim/>
-            <ListRap/>
+            <ListRap pushMethod={props.route.history.push}/>
             </div>
             )
             }

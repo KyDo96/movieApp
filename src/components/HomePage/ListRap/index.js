@@ -54,7 +54,8 @@ class ListRap extends Component {
                 return <button className={myClass} 
                  data-toggle="pill"
                  key={index}
-                >
+                 style={{cursor:'default'}}
+                 >
                     <div className='row m-0'>
                     <img className='col-2' src={item.hinhAnh} alt=''></img>
                     <div className='col-10'>
@@ -64,7 +65,9 @@ class ListRap extends Component {
                             const ngayChieu=new Date(item.ngayChieuGioChieu).toLocaleDateString();
                             const gioChieu=new Date(item.ngayChieuGioChieu).toLocaleTimeString();
                             return (
-                                <button className='btn btn-success m-1'>
+                                <button className='btn btn-success m-1'
+                                onClick={()=>{this.props.pushMethod(`./phongve`)}}
+                                >
                                     {gioChieu}
                                     <br/>
                                     {ngayChieu}

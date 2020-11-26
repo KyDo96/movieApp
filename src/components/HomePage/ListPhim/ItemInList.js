@@ -16,7 +16,7 @@ export default function ItemInList(props) {
             </a>
             
           </div>
-          <NavLink to="/sdcsdc" className="overlay">
+          <NavLink to={`/detail-film/${props.phim.maPhim}`} className="overlay">
             <div className="backGround"></div>
             <div className="button">MUA VÉ</div>
           </NavLink>

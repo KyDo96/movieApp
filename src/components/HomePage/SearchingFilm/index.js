@@ -61,6 +61,24 @@ function SearchingFilm(props) {
         const {name,value}=e.target;
         setState({...state,[name]:value})
     }
+    const renderButton=()=>{
+        let colorButton='secondary';
+        const handleClick=()=>{
+            if(state.rap&&state.ngayXem&&state.suatChieu){
+                props.pushMethod('./phongve')
+            }
+        }
+        if(state.rap&&state.ngayXem&&state.suatChieu){
+            colorButton='success';
+        }
+        return(
+            <button 
+            style={{height:'40px',width:'100%'}} 
+            className={`btn btn-${colorButton}`}
+            onClick={()=>{handleClick()}}
+            >Mua vé ngay</button>
+        )
+    }
     return (
         <div className='searchingMovie container'>
             <div style={{flexWrap:"nowrap"}} className='row m-0'>
@@ -81,7 +99,7 @@ function SearchingFilm(props) {
                     {renderSuatChieu()}
             </select>
             <div style={{paddingLeft:'10px',paddingRight:'10px',width:'calc(70%/4)'}}>
-            <button style={{height:'40px',width:'100%'}} className='btn btn-secondary'>Mua vé ngay</button>
+            {renderButton()}
             </div>
             </div>
         </div>
