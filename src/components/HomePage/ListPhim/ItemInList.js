@@ -14,7 +14,6 @@ export default function ItemInList(props) {
             <a onClick={()=> setOpen(true)}>
               <img src='./assets/img/play-video.png'/>
             </a>
-            
           </div>
           <NavLink to={`/detail-film/${props.phim.maPhim}`} className="overlay">
             <div className="backGround"></div>
