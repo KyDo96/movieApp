@@ -18,4 +18,10 @@ const getListCumRapApi=(maHeThongRap)=>{
         method:'GET'
     })
 }
-export {getListPhimApi,getListHeThongRapApi,getListCumRapApi}
+const getDetailPhim=(maPhim)=>{
+    return Axios({
+        url:`https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/LayThongTinPhim?MaPhim=${maPhim}`,
+        method:'GET'
+    })
+}
+export {getListPhimApi,getListHeThongRapApi,getListCumRapApi,getDetailPhim}
